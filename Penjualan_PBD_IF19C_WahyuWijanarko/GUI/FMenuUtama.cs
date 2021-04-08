@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Penjualan_PBD_IF19C_WahyuWijanarko
+namespace Penjualan_PBD_IF19C_WahyuWijanarko.GUI
 {
-    public partial class Form1 : Form
+    public partial class FMenuUtama : Form
     {
-        public Form1()
+        public FMenuUtama()
         {
             InitializeComponent();
         }
