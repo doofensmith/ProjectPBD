@@ -44,16 +44,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\FAboutProgrammer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FAboutProgrammer.Designer.cs">
+      <DependentUpon>FAboutProgrammer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FBarang.Designer.cs">
+      <DependentUpon>FBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FMenuUtama.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\FMenuUtama.Designer.cs">
       <DependentUpon>FMenuUtama.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FPelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FPelanggan.Designer.cs">
+      <DependentUpon>FPelanggan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FAboutProgrammer.resx">
+      <DependentUpon>FAboutProgrammer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FBarang.resx">
+      <DependentUpon>FBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FMenuUtama.resx">
       <DependentUpon>FMenuUtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FPelanggan.resx">
+      <DependentUpon>FPelanggan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -195,6 +231,12 @@
   <ItemGroup>
     <Folder Include="Kelas\" />
     <Folder Include="Laporan\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snupdog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eren-yeagers4-c.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
