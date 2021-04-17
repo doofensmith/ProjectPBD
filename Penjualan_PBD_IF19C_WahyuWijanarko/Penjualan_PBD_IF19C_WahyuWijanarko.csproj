@@ -56,6 +56,18 @@
     <Compile Include="GUI\FBarang.Designer.cs">
       <DependentUpon>FBarang.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FCariBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FCariBarang.Designer.cs">
+      <DependentUpon>FCariBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FCariPelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FCariPelanggan.Designer.cs">
+      <DependentUpon>FCariPelanggan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
     <Compile Include="GUI\FPelanggan.Designer.cs">
       <DependentUpon>FPelanggan.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FTransaksi.Designer.cs">
+      <DependentUpon>FTransaksi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FAboutProgrammer.resx">
@@ -81,6 +99,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FBarang.resx">
       <DependentUpon>FBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FCariBarang.resx">
+      <DependentUpon>FCariBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FCariPelanggan.resx">
+      <DependentUpon>FCariPelanggan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
@@ -90,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FPelanggan.resx">
       <DependentUpon>FPelanggan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FTransaksi.resx">
+      <DependentUpon>FTransaksi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
