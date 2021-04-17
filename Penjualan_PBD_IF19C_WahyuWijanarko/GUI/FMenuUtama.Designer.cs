@@ -76,20 +76,23 @@
             // submenu_login
             // 
             this.submenu_login.Name = "submenu_login";
-            this.submenu_login.Size = new System.Drawing.Size(112, 22);
+            this.submenu_login.Size = new System.Drawing.Size(152, 22);
             this.submenu_login.Text = "Login";
+            this.submenu_login.Click += new System.EventHandler(this.submenu_login_Click);
             // 
             // submenu_logout
             // 
             this.submenu_logout.Name = "submenu_logout";
-            this.submenu_logout.Size = new System.Drawing.Size(112, 22);
+            this.submenu_logout.Size = new System.Drawing.Size(152, 22);
             this.submenu_logout.Text = "Logout";
+            this.submenu_logout.Click += new System.EventHandler(this.submenu_logout_Click);
             // 
             // submenu_exit
             // 
             this.submenu_exit.Name = "submenu_exit";
-            this.submenu_exit.Size = new System.Drawing.Size(112, 22);
+            this.submenu_exit.Size = new System.Drawing.Size(152, 22);
             this.submenu_exit.Text = "Exit";
+            this.submenu_exit.Click += new System.EventHandler(this.sub_menu_exit_Click);
             // 
             // MenuMaster
             // 
@@ -103,14 +106,16 @@
             // submenu_customer
             // 
             this.submenu_customer.Name = "submenu_customer";
-            this.submenu_customer.Size = new System.Drawing.Size(126, 22);
+            this.submenu_customer.Size = new System.Drawing.Size(152, 22);
             this.submenu_customer.Text = "Customer";
+            this.submenu_customer.Click += new System.EventHandler(this.submenu_customer_Click);
             // 
             // submenu_item
             // 
             this.submenu_item.Name = "submenu_item";
-            this.submenu_item.Size = new System.Drawing.Size(126, 22);
+            this.submenu_item.Size = new System.Drawing.Size(152, 22);
             this.submenu_item.Text = "Item";
+            this.submenu_item.Click += new System.EventHandler(this.submenu_item_Click);
             // 
             // MenuTransaction
             // 
@@ -123,8 +128,9 @@
             // submenu_selling
             // 
             this.submenu_selling.Name = "submenu_selling";
-            this.submenu_selling.Size = new System.Drawing.Size(109, 22);
+            this.submenu_selling.Size = new System.Drawing.Size(152, 22);
             this.submenu_selling.Text = "Selling";
+            this.submenu_selling.Click += new System.EventHandler(this.submenu_selling_Click);
             // 
             // MenuTools
             // 
@@ -137,8 +143,9 @@
             // submenu_about
             // 
             this.submenu_about.Name = "submenu_about";
-            this.submenu_about.Size = new System.Drawing.Size(107, 22);
+            this.submenu_about.Size = new System.Drawing.Size(152, 22);
             this.submenu_about.Text = "About";
+            this.submenu_about.Click += new System.EventHandler(this.submenu_about_Click);
             // 
             // toolStrip1
             // 
@@ -163,6 +170,7 @@
             this.ToolCustomer.Size = new System.Drawing.Size(23, 22);
             this.ToolCustomer.Text = "ToolCustomer";
             this.ToolCustomer.ToolTipText = "Tampilkan data pelanggan";
+            this.ToolCustomer.Click += new System.EventHandler(this.ToolCustomer_Click);
             // 
             // ToolItems
             // 
@@ -173,6 +181,7 @@
             this.ToolItems.Size = new System.Drawing.Size(23, 22);
             this.ToolItems.Text = "toolStripButton2";
             this.ToolItems.ToolTipText = "Tampilkan data barang";
+            this.ToolItems.Click += new System.EventHandler(this.ToolItems_Click);
             // 
             // ToolTransaction
             // 
@@ -183,6 +192,7 @@
             this.ToolTransaction.Size = new System.Drawing.Size(23, 22);
             this.ToolTransaction.Text = "toolStripButton3";
             this.ToolTransaction.ToolTipText = "Tampilkan data transaksi";
+            this.ToolTransaction.Click += new System.EventHandler(this.ToolTransaction_Click);
             // 
             // toolStripSeparator1
             // 
@@ -198,6 +208,7 @@
             this.ToolExit.Size = new System.Drawing.Size(23, 22);
             this.ToolExit.Text = "toolStripButton4";
             this.ToolExit.ToolTipText = "Keluar Aplikasi";
+            this.ToolExit.Click += new System.EventHandler(this.ToolExit_Click);
             // 
             // FMenuUtama
             // 
@@ -214,6 +225,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ":: Sistem Informasi Penjualan Tekno Store ::";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FMenuUtama_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
