@@ -92,6 +92,7 @@
     <Compile Include="GUI\FTransaksi.Designer.cs">
       <DependentUpon>FTransaksi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kelas\Koneksi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FAboutProgrammer.resx">
@@ -256,7 +257,6 @@
     <None Include="Resources\transaction64.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Kelas\" />
     <Folder Include="Laporan\" />
   </ItemGroup>
   <ItemGroup>
