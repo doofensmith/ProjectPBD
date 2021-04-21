@@ -36,16 +36,16 @@
             this.TxtNamaPelanggan = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnSimpan = new System.Windows.Forms.Button();
             this.TxtKodePelanggan = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.BtnSimpan = new System.Windows.Forms.Button();
             this.BtnKeluar = new System.Windows.Forms.Button();
             this.BtnHapus = new System.Windows.Forms.Button();
             this.BtnEdit = new System.Windows.Forms.Button();
             this.BtnBaru = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ListPelanggan)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -60,6 +60,7 @@
             this.TxtCariPelanggan.Size = new System.Drawing.Size(236, 29);
             this.TxtCariPelanggan.TabIndex = 11;
             this.TxtCariPelanggan.Text = "cari";
+            this.TxtCariPelanggan.TextChanged += new System.EventHandler(this.TxtCariPelanggan_TextChanged);
             // 
             // ListPelanggan
             // 
@@ -68,6 +69,7 @@
             this.ListPelanggan.Name = "ListPelanggan";
             this.ListPelanggan.Size = new System.Drawing.Size(397, 254);
             this.ListPelanggan.TabIndex = 0;
+            this.ListPelanggan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListPelanggan_CellClick);
             // 
             // TxtAlamatPelanggan
             // 
@@ -122,6 +124,21 @@
             this.panel2.Size = new System.Drawing.Size(168, 108);
             this.panel2.TabIndex = 8;
             // 
+            // BtnSimpan
+            // 
+            this.BtnSimpan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnSimpan.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.save32;
+            this.BtnSimpan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSimpan.Location = new System.Drawing.Point(11, 10);
+            this.BtnSimpan.Name = "BtnSimpan";
+            this.BtnSimpan.Size = new System.Drawing.Size(145, 88);
+            this.BtnSimpan.TabIndex = 0;
+            this.BtnSimpan.Text = "&Simpan";
+            this.BtnSimpan.UseVisualStyleBackColor = true;
+            this.BtnSimpan.Click += new System.EventHandler(this.BtnSimpan_Click);
+            // 
             // TxtKodePelanggan
             // 
             this.TxtKodePelanggan.Location = new System.Drawing.Point(146, 37);
@@ -150,6 +167,54 @@
             this.panel1.Size = new System.Drawing.Size(234, 109);
             this.panel1.TabIndex = 7;
             // 
+            // BtnKeluar
+            // 
+            this.BtnKeluar.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.exit16;
+            this.BtnKeluar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnKeluar.Location = new System.Drawing.Point(120, 58);
+            this.BtnKeluar.Name = "BtnKeluar";
+            this.BtnKeluar.Size = new System.Drawing.Size(104, 41);
+            this.BtnKeluar.TabIndex = 3;
+            this.BtnKeluar.Text = "&Keluar";
+            this.BtnKeluar.UseVisualStyleBackColor = true;
+            this.BtnKeluar.Click += new System.EventHandler(this.BtnKeluar_Click);
+            // 
+            // BtnHapus
+            // 
+            this.BtnHapus.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.delete16;
+            this.BtnHapus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnHapus.Location = new System.Drawing.Point(10, 58);
+            this.BtnHapus.Name = "BtnHapus";
+            this.BtnHapus.Size = new System.Drawing.Size(104, 41);
+            this.BtnHapus.TabIndex = 2;
+            this.BtnHapus.Text = "&Hapus";
+            this.BtnHapus.UseVisualStyleBackColor = true;
+            this.BtnHapus.Click += new System.EventHandler(this.BtnHapus_Click);
+            // 
+            // BtnEdit
+            // 
+            this.BtnEdit.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.edit16;
+            this.BtnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEdit.Location = new System.Drawing.Point(120, 11);
+            this.BtnEdit.Name = "BtnEdit";
+            this.BtnEdit.Size = new System.Drawing.Size(104, 41);
+            this.BtnEdit.TabIndex = 1;
+            this.BtnEdit.Text = "&Edit";
+            this.BtnEdit.UseVisualStyleBackColor = true;
+            this.BtnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
+            // 
+            // BtnBaru
+            // 
+            this.BtnBaru.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.add16;
+            this.BtnBaru.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnBaru.Location = new System.Drawing.Point(10, 11);
+            this.BtnBaru.Name = "BtnBaru";
+            this.BtnBaru.Size = new System.Drawing.Size(104, 41);
+            this.BtnBaru.TabIndex = 0;
+            this.BtnBaru.Text = "&Baru";
+            this.BtnBaru.UseVisualStyleBackColor = true;
+            this.BtnBaru.Click += new System.EventHandler(this.BtnBaru_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.TxtAlamatPelanggan);
@@ -173,64 +238,6 @@
             this.label1.Size = new System.Drawing.Size(121, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kode Pelanggan";
-            // 
-            // BtnSimpan
-            // 
-            this.BtnSimpan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnSimpan.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.save32;
-            this.BtnSimpan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSimpan.Location = new System.Drawing.Point(11, 10);
-            this.BtnSimpan.Name = "BtnSimpan";
-            this.BtnSimpan.Size = new System.Drawing.Size(145, 88);
-            this.BtnSimpan.TabIndex = 0;
-            this.BtnSimpan.Text = "&Simpan";
-            this.BtnSimpan.UseVisualStyleBackColor = true;
-            // 
-            // BtnKeluar
-            // 
-            this.BtnKeluar.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.exit16;
-            this.BtnKeluar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnKeluar.Location = new System.Drawing.Point(120, 58);
-            this.BtnKeluar.Name = "BtnKeluar";
-            this.BtnKeluar.Size = new System.Drawing.Size(104, 41);
-            this.BtnKeluar.TabIndex = 3;
-            this.BtnKeluar.Text = "&Keluar";
-            this.BtnKeluar.UseVisualStyleBackColor = true;
-            // 
-            // BtnHapus
-            // 
-            this.BtnHapus.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.delete16;
-            this.BtnHapus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnHapus.Location = new System.Drawing.Point(10, 58);
-            this.BtnHapus.Name = "BtnHapus";
-            this.BtnHapus.Size = new System.Drawing.Size(104, 41);
-            this.BtnHapus.TabIndex = 2;
-            this.BtnHapus.Text = "&Hapus";
-            this.BtnHapus.UseVisualStyleBackColor = true;
-            // 
-            // BtnEdit
-            // 
-            this.BtnEdit.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.edit16;
-            this.BtnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEdit.Location = new System.Drawing.Point(120, 11);
-            this.BtnEdit.Name = "BtnEdit";
-            this.BtnEdit.Size = new System.Drawing.Size(104, 41);
-            this.BtnEdit.TabIndex = 1;
-            this.BtnEdit.Text = "&Edit";
-            this.BtnEdit.UseVisualStyleBackColor = true;
-            // 
-            // BtnBaru
-            // 
-            this.BtnBaru.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.add16;
-            this.BtnBaru.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBaru.Location = new System.Drawing.Point(10, 11);
-            this.BtnBaru.Name = "BtnBaru";
-            this.BtnBaru.Size = new System.Drawing.Size(104, 41);
-            this.BtnBaru.TabIndex = 0;
-            this.BtnBaru.Text = "&Baru";
-            this.BtnBaru.UseVisualStyleBackColor = true;
             // 
             // FPelanggan
             // 
