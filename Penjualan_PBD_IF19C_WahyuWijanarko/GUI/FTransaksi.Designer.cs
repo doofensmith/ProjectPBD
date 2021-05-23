@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtNoKwitansi = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.DtpTanggalKwitansi = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TxtNoKwitansi = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.TxtKodePelanggan = new System.Windows.Forms.TextBox();
-            this.TxtNamaPelanggan = new System.Windows.Forms.TextBox();
             this.BtnBrowsePelanggan = new System.Windows.Forms.Button();
+            this.TxtNamaPelanggan = new System.Windows.Forms.TextBox();
+            this.TxtKodePelanggan = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.TxtKodeBarang = new System.Windows.Forms.TextBox();
-            this.TxtNamaBarang = new System.Windows.Forms.TextBox();
-            this.TxtHargaBarang = new System.Windows.Forms.TextBox();
-            this.TxtJumlahJual = new System.Windows.Forms.TextBox();
-            this.BtnBrowseBarang = new System.Windows.Forms.Button();
-            this.BtnTambah = new System.Windows.Forms.Button();
             this.BtnKurang = new System.Windows.Forms.Button();
+            this.BtnTambah = new System.Windows.Forms.Button();
+            this.BtnBrowseBarang = new System.Windows.Forms.Button();
+            this.TxtJumlahJual = new System.Windows.Forms.TextBox();
+            this.TxtHargaBarang = new System.Windows.Forms.TextBox();
+            this.TxtNamaBarang = new System.Windows.Forms.TextBox();
+            this.TxtKodeBarang = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.LblTotalBayar = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnBaru = new System.Windows.Forms.Button();
-            this.BtnSimpan = new System.Windows.Forms.Button();
             this.BtnKeluar = new System.Windows.Forms.Button();
+            this.BtnSimpan = new System.Windows.Forms.Button();
+            this.BtnBaru = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.DataGridPenjualan = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
@@ -80,22 +80,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = ":: Data Penjualan ::";
             // 
-            // label1
+            // DtpTanggalKwitansi
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "No Kwitansi";
-            // 
-            // TxtNoKwitansi
-            // 
-            this.TxtNoKwitansi.Location = new System.Drawing.Point(146, 28);
-            this.TxtNoKwitansi.Name = "TxtNoKwitansi";
-            this.TxtNoKwitansi.Size = new System.Drawing.Size(100, 29);
-            this.TxtNoKwitansi.TabIndex = 1;
-            this.TxtNoKwitansi.Text = "abcde";
+            this.DtpTanggalKwitansi.CustomFormat = "MM/dd/yyyy";
+            this.DtpTanggalKwitansi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtpTanggalKwitansi.Location = new System.Drawing.Point(335, 28);
+            this.DtpTanggalKwitansi.Name = "DtpTanggalKwitansi";
+            this.DtpTanggalKwitansi.Size = new System.Drawing.Size(200, 29);
+            this.DtpTanggalKwitansi.TabIndex = 3;
             // 
             // label2
             // 
@@ -106,14 +98,22 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Tanggal";
             // 
-            // DtpTanggalKwitansi
+            // TxtNoKwitansi
             // 
-            this.DtpTanggalKwitansi.CustomFormat = "MM/dd/yyyy";
-            this.DtpTanggalKwitansi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DtpTanggalKwitansi.Location = new System.Drawing.Point(335, 28);
-            this.DtpTanggalKwitansi.Name = "DtpTanggalKwitansi";
-            this.DtpTanggalKwitansi.Size = new System.Drawing.Size(200, 29);
-            this.DtpTanggalKwitansi.TabIndex = 3;
+            this.TxtNoKwitansi.Location = new System.Drawing.Point(146, 28);
+            this.TxtNoKwitansi.Name = "TxtNoKwitansi";
+            this.TxtNoKwitansi.Size = new System.Drawing.Size(100, 29);
+            this.TxtNoKwitansi.TabIndex = 1;
+            this.TxtNoKwitansi.Text = "abcde";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "No Kwitansi";
             // 
             // groupBox2
             // 
@@ -129,14 +129,31 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = ":: Data Pelanggan ::";
             // 
-            // label3
+            // BtnBrowsePelanggan
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 21);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Kode Pelanggan";
+            this.BtnBrowsePelanggan.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.search16;
+            this.BtnBrowsePelanggan.Location = new System.Drawing.Point(254, 32);
+            this.BtnBrowsePelanggan.Name = "BtnBrowsePelanggan";
+            this.BtnBrowsePelanggan.Size = new System.Drawing.Size(46, 29);
+            this.BtnBrowsePelanggan.TabIndex = 4;
+            this.BtnBrowsePelanggan.UseVisualStyleBackColor = true;
+            this.BtnBrowsePelanggan.Click += new System.EventHandler(this.BtnBrowsePelanggan_Click);
+            // 
+            // TxtNamaPelanggan
+            // 
+            this.TxtNamaPelanggan.Location = new System.Drawing.Point(146, 67);
+            this.TxtNamaPelanggan.Name = "TxtNamaPelanggan";
+            this.TxtNamaPelanggan.Size = new System.Drawing.Size(279, 29);
+            this.TxtNamaPelanggan.TabIndex = 3;
+            this.TxtNamaPelanggan.Text = "nama";
+            // 
+            // TxtKodePelanggan
+            // 
+            this.TxtKodePelanggan.Location = new System.Drawing.Point(146, 32);
+            this.TxtKodePelanggan.Name = "TxtKodePelanggan";
+            this.TxtKodePelanggan.Size = new System.Drawing.Size(100, 29);
+            this.TxtKodePelanggan.TabIndex = 2;
+            this.TxtKodePelanggan.Text = "kode";
             // 
             // label4
             // 
@@ -147,30 +164,14 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Nama Pelanggan";
             // 
-            // TxtKodePelanggan
+            // label3
             // 
-            this.TxtKodePelanggan.Location = new System.Drawing.Point(146, 32);
-            this.TxtKodePelanggan.Name = "TxtKodePelanggan";
-            this.TxtKodePelanggan.Size = new System.Drawing.Size(100, 29);
-            this.TxtKodePelanggan.TabIndex = 2;
-            this.TxtKodePelanggan.Text = "kode";
-            // 
-            // TxtNamaPelanggan
-            // 
-            this.TxtNamaPelanggan.Location = new System.Drawing.Point(146, 67);
-            this.TxtNamaPelanggan.Name = "TxtNamaPelanggan";
-            this.TxtNamaPelanggan.Size = new System.Drawing.Size(279, 29);
-            this.TxtNamaPelanggan.TabIndex = 3;
-            this.TxtNamaPelanggan.Text = "nama";
-            // 
-            // BtnBrowsePelanggan
-            // 
-            this.BtnBrowsePelanggan.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.search16;
-            this.BtnBrowsePelanggan.Location = new System.Drawing.Point(254, 32);
-            this.BtnBrowsePelanggan.Name = "BtnBrowsePelanggan";
-            this.BtnBrowsePelanggan.Size = new System.Drawing.Size(46, 29);
-            this.BtnBrowsePelanggan.TabIndex = 4;
-            this.BtnBrowsePelanggan.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(121, 21);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Kode Pelanggan";
             // 
             // groupBox3
             // 
@@ -192,32 +193,63 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = ":: Data Barang ::";
             // 
-            // label5
+            // BtnKurang
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 34);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 21);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Kode Barang";
+            this.BtnKurang.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.cancel32;
+            this.BtnKurang.Location = new System.Drawing.Point(491, 123);
+            this.BtnKurang.Name = "BtnKurang";
+            this.BtnKurang.Size = new System.Drawing.Size(58, 42);
+            this.BtnKurang.TabIndex = 10;
+            this.BtnKurang.UseVisualStyleBackColor = true;
+            this.BtnKurang.Click += new System.EventHandler(this.BtnKurang_Click);
             // 
-            // label6
+            // BtnTambah
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 69);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 21);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Nama Barang";
+            this.BtnTambah.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.add32;
+            this.BtnTambah.Location = new System.Drawing.Point(427, 123);
+            this.BtnTambah.Name = "BtnTambah";
+            this.BtnTambah.Size = new System.Drawing.Size(58, 42);
+            this.BtnTambah.TabIndex = 9;
+            this.BtnTambah.UseVisualStyleBackColor = true;
+            this.BtnTambah.Click += new System.EventHandler(this.BtnTambah_Click);
             // 
-            // label7
+            // BtnBrowseBarang
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 104);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 21);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Harga";
+            this.BtnBrowseBarang.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.search16;
+            this.BtnBrowseBarang.Location = new System.Drawing.Point(254, 31);
+            this.BtnBrowseBarang.Name = "BtnBrowseBarang";
+            this.BtnBrowseBarang.Size = new System.Drawing.Size(46, 29);
+            this.BtnBrowseBarang.TabIndex = 8;
+            this.BtnBrowseBarang.UseVisualStyleBackColor = true;
+            this.BtnBrowseBarang.Click += new System.EventHandler(this.BtnBrowseBarang_Click);
+            // 
+            // TxtJumlahJual
+            // 
+            this.TxtJumlahJual.Location = new System.Drawing.Point(146, 136);
+            this.TxtJumlahJual.Name = "TxtJumlahJual";
+            this.TxtJumlahJual.Size = new System.Drawing.Size(100, 29);
+            this.TxtJumlahJual.TabIndex = 7;
+            // 
+            // TxtHargaBarang
+            // 
+            this.TxtHargaBarang.Location = new System.Drawing.Point(146, 101);
+            this.TxtHargaBarang.Name = "TxtHargaBarang";
+            this.TxtHargaBarang.Size = new System.Drawing.Size(154, 29);
+            this.TxtHargaBarang.TabIndex = 6;
+            // 
+            // TxtNamaBarang
+            // 
+            this.TxtNamaBarang.Location = new System.Drawing.Point(146, 66);
+            this.TxtNamaBarang.Name = "TxtNamaBarang";
+            this.TxtNamaBarang.Size = new System.Drawing.Size(279, 29);
+            this.TxtNamaBarang.TabIndex = 5;
+            // 
+            // TxtKodeBarang
+            // 
+            this.TxtKodeBarang.Location = new System.Drawing.Point(146, 31);
+            this.TxtKodeBarang.Name = "TxtKodeBarang";
+            this.TxtKodeBarang.Size = new System.Drawing.Size(100, 29);
+            this.TxtKodeBarang.TabIndex = 4;
             // 
             // label8
             // 
@@ -228,60 +260,32 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "Jumlah Jual";
             // 
-            // TxtKodeBarang
+            // label7
             // 
-            this.TxtKodeBarang.Location = new System.Drawing.Point(146, 31);
-            this.TxtKodeBarang.Name = "TxtKodeBarang";
-            this.TxtKodeBarang.Size = new System.Drawing.Size(100, 29);
-            this.TxtKodeBarang.TabIndex = 4;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 104);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 21);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Harga";
             // 
-            // TxtNamaBarang
+            // label6
             // 
-            this.TxtNamaBarang.Location = new System.Drawing.Point(146, 66);
-            this.TxtNamaBarang.Name = "TxtNamaBarang";
-            this.TxtNamaBarang.Size = new System.Drawing.Size(279, 29);
-            this.TxtNamaBarang.TabIndex = 5;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 69);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 21);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Nama Barang";
             // 
-            // TxtHargaBarang
+            // label5
             // 
-            this.TxtHargaBarang.Location = new System.Drawing.Point(146, 101);
-            this.TxtHargaBarang.Name = "TxtHargaBarang";
-            this.TxtHargaBarang.Size = new System.Drawing.Size(154, 29);
-            this.TxtHargaBarang.TabIndex = 6;
-            // 
-            // TxtJumlahJual
-            // 
-            this.TxtJumlahJual.Location = new System.Drawing.Point(146, 136);
-            this.TxtJumlahJual.Name = "TxtJumlahJual";
-            this.TxtJumlahJual.Size = new System.Drawing.Size(100, 29);
-            this.TxtJumlahJual.TabIndex = 7;
-            // 
-            // BtnBrowseBarang
-            // 
-            this.BtnBrowseBarang.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.search16;
-            this.BtnBrowseBarang.Location = new System.Drawing.Point(254, 31);
-            this.BtnBrowseBarang.Name = "BtnBrowseBarang";
-            this.BtnBrowseBarang.Size = new System.Drawing.Size(46, 29);
-            this.BtnBrowseBarang.TabIndex = 8;
-            this.BtnBrowseBarang.UseVisualStyleBackColor = true;
-            // 
-            // BtnTambah
-            // 
-            this.BtnTambah.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.add32;
-            this.BtnTambah.Location = new System.Drawing.Point(427, 123);
-            this.BtnTambah.Name = "BtnTambah";
-            this.BtnTambah.Size = new System.Drawing.Size(58, 42);
-            this.BtnTambah.TabIndex = 9;
-            this.BtnTambah.UseVisualStyleBackColor = true;
-            // 
-            // BtnKurang
-            // 
-            this.BtnKurang.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.cancel32;
-            this.BtnKurang.Location = new System.Drawing.Point(491, 123);
-            this.BtnKurang.Name = "BtnKurang";
-            this.BtnKurang.Size = new System.Drawing.Size(58, 42);
-            this.BtnKurang.TabIndex = 10;
-            this.BtnKurang.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 34);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 21);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Kode Barang";
             // 
             // label9
             // 
@@ -313,16 +317,17 @@
             this.panel1.Size = new System.Drawing.Size(555, 69);
             this.panel1.TabIndex = 5;
             // 
-            // BtnBaru
+            // BtnKeluar
             // 
-            this.BtnBaru.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.edit32;
-            this.BtnBaru.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBaru.Location = new System.Drawing.Point(9, 9);
-            this.BtnBaru.Name = "BtnBaru";
-            this.BtnBaru.Size = new System.Drawing.Size(144, 49);
-            this.BtnBaru.TabIndex = 0;
-            this.BtnBaru.Text = "&Baru";
-            this.BtnBaru.UseVisualStyleBackColor = true;
+            this.BtnKeluar.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.exit32;
+            this.BtnKeluar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnKeluar.Location = new System.Drawing.Point(400, 9);
+            this.BtnKeluar.Name = "BtnKeluar";
+            this.BtnKeluar.Size = new System.Drawing.Size(144, 49);
+            this.BtnKeluar.TabIndex = 2;
+            this.BtnKeluar.Text = "&Keluar";
+            this.BtnKeluar.UseVisualStyleBackColor = true;
+            this.BtnKeluar.Click += new System.EventHandler(this.BtnKeluar_Click);
             // 
             // BtnSimpan
             // 
@@ -334,17 +339,19 @@
             this.BtnSimpan.TabIndex = 1;
             this.BtnSimpan.Text = "&Simpan";
             this.BtnSimpan.UseVisualStyleBackColor = true;
+            this.BtnSimpan.Click += new System.EventHandler(this.BtnSimpan_Click);
             // 
-            // BtnKeluar
+            // BtnBaru
             // 
-            this.BtnKeluar.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.exit32;
-            this.BtnKeluar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnKeluar.Location = new System.Drawing.Point(400, 9);
-            this.BtnKeluar.Name = "BtnKeluar";
-            this.BtnKeluar.Size = new System.Drawing.Size(144, 49);
-            this.BtnKeluar.TabIndex = 2;
-            this.BtnKeluar.Text = "&Keluar";
-            this.BtnKeluar.UseVisualStyleBackColor = true;
+            this.BtnBaru.Image = global::Penjualan_PBD_IF19C_WahyuWijanarko.Properties.Resources.edit32;
+            this.BtnBaru.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnBaru.Location = new System.Drawing.Point(9, 9);
+            this.BtnBaru.Name = "BtnBaru";
+            this.BtnBaru.Size = new System.Drawing.Size(144, 49);
+            this.BtnBaru.TabIndex = 0;
+            this.BtnBaru.Text = "&Baru";
+            this.BtnBaru.UseVisualStyleBackColor = true;
+            this.BtnBaru.Click += new System.EventHandler(this.BtnBaru_Click);
             // 
             // groupBox4
             // 
@@ -358,11 +365,13 @@
             // 
             // DataGridPenjualan
             // 
+            this.DataGridPenjualan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridPenjualan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridPenjualan.Location = new System.Drawing.Point(6, 31);
             this.DataGridPenjualan.Name = "DataGridPenjualan";
             this.DataGridPenjualan.Size = new System.Drawing.Size(411, 467);
             this.DataGridPenjualan.TabIndex = 0;
+            this.DataGridPenjualan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridPenjualan_CellClick);
             // 
             // FTransaksi
             // 

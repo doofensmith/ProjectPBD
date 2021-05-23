@@ -55,6 +55,7 @@
             this.DataGridBarang.Name = "DataGridBarang";
             this.DataGridBarang.Size = new System.Drawing.Size(397, 144);
             this.DataGridBarang.TabIndex = 2;
+            this.DataGridBarang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridBarang_CellClick);
             // 
             // TxtCariBarang
             // 
@@ -62,6 +63,7 @@
             this.TxtCariBarang.Name = "TxtCariBarang";
             this.TxtCariBarang.Size = new System.Drawing.Size(397, 25);
             this.TxtCariBarang.TabIndex = 1;
+            this.TxtCariBarang.TextChanged += new System.EventHandler(this.TxtCariBarang_TextChanged);
             // 
             // label1
             // 

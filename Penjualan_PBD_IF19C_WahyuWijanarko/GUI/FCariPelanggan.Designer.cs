@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtCariPelanggan = new System.Windows.Forms.TextBox();
             this.DataGridPelanggan = new System.Windows.Forms.DataGridView();
+            this.TxtCariPelanggan = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridPelanggan)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +48,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = ".:: Data Pelanggan ::.";
             // 
+            // DataGridPelanggan
+            // 
+            this.DataGridPelanggan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridPelanggan.Location = new System.Drawing.Point(9, 82);
+            this.DataGridPelanggan.Name = "DataGridPelanggan";
+            this.DataGridPelanggan.Size = new System.Drawing.Size(397, 144);
+            this.DataGridPelanggan.TabIndex = 2;
+            this.DataGridPelanggan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridPelanggan_CellClick);
+            // 
+            // TxtCariPelanggan
+            // 
+            this.TxtCariPelanggan.Location = new System.Drawing.Point(9, 51);
+            this.TxtCariPelanggan.Name = "TxtCariPelanggan";
+            this.TxtCariPelanggan.Size = new System.Drawing.Size(397, 25);
+            this.TxtCariPelanggan.TabIndex = 1;
+            this.TxtCariPelanggan.TextChanged += new System.EventHandler(this.TxtCariPelanggan_TextChanged);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -56,21 +73,6 @@
             this.label1.Size = new System.Drawing.Size(254, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cari Berdasarkan Kode/Nama Pelanggan :";
-            // 
-            // TxtCariPelanggan
-            // 
-            this.TxtCariPelanggan.Location = new System.Drawing.Point(9, 51);
-            this.TxtCariPelanggan.Name = "TxtCariPelanggan";
-            this.TxtCariPelanggan.Size = new System.Drawing.Size(397, 25);
-            this.TxtCariPelanggan.TabIndex = 1;
-            // 
-            // DataGridPelanggan
-            // 
-            this.DataGridPelanggan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridPelanggan.Location = new System.Drawing.Point(9, 82);
-            this.DataGridPelanggan.Name = "DataGridPelanggan";
-            this.DataGridPelanggan.Size = new System.Drawing.Size(397, 144);
-            this.DataGridPelanggan.TabIndex = 2;
             // 
             // FCariPelanggan
             // 
