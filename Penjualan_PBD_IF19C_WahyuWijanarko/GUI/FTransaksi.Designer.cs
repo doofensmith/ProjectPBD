@@ -409,7 +409,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DateTimePicker DtpTanggalKwitansi;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TxtNoKwitansi;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
@@ -437,5 +436,6 @@
         private System.Windows.Forms.Button BtnKeluar;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView DataGridPenjualan;
+        public System.Windows.Forms.TextBox TxtNoKwitansi;
     }
 }

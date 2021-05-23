@@ -24,6 +24,9 @@ namespace Penjualan_PBD_IF19C_WahyuWijanarko.GUI {
         private DataSet ds;
         private SqlDataAdapter da;
 
+        //REPORT - buat ObjTransaksi
+        public static FTransaksi ObjTransaksi;
+
         //prosedur bersih
         private void Bersih() {
             TxtNoKwitansi.Text = "";
@@ -175,6 +178,10 @@ namespace Penjualan_PBD_IF19C_WahyuWijanarko.GUI {
 
         public FTransaksi() {
             InitializeComponent();
+
+            //REPORT - Mengisi nilai ObTransaksi dengan FTransaksi
+            ObjTransaksi = this;
+
             //memanggil prosedur awal
             awal();
         }
@@ -314,11 +321,18 @@ namespace Penjualan_PBD_IF19C_WahyuWijanarko.GUI {
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 conn.Close();
-            }
 
-            //transaksi selesai
-            MessageBox.Show("Transaksi Selesai");
-            awal();
+            }
+            else {
+                //transaksi selesai
+                MessageBox.Show("Transaksi Selesai");
+
+                //REPORT - Memanggil report kwitansi
+                FKwitansi kw = new FKwitansi();
+                kw.Show();
+                awal();
+            }
+            
         }
 
         private void BtnKeluar_Click(object sender, EventArgs e) {

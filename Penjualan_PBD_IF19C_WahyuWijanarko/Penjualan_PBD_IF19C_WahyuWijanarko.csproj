@@ -32,8 +32,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,6 +75,12 @@
     <Compile Include="GUI\FCariPelanggan.Designer.cs">
       <DependentUpon>FCariPelanggan.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FKwitansi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FKwitansi.Designer.cs">
+      <DependentUpon>FKwitansi.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +106,12 @@
       <DependentUpon>FTransaksi.cs</DependentUpon>
     </Compile>
     <Compile Include="Kelas\Koneksi.cs" />
+    <Compile Include="Laporan\CetakKwitansi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CetakKwitansi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FAboutProgrammer.resx">
@@ -107,6 +126,9 @@
     <EmbeddedResource Include="GUI\FCariPelanggan.resx">
       <DependentUpon>FCariPelanggan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FKwitansi.resx">
+      <DependentUpon>FKwitansi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +140,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FTransaksi.resx">
       <DependentUpon>FTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CetakKwitansi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CetakKwitansi.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -256,14 +282,15 @@
   <ItemGroup>
     <None Include="Resources\transaction64.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Laporan\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\snupdog.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eren-yeagers4-c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
